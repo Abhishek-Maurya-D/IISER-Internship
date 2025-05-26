@@ -6,14 +6,14 @@ This repository contains the work undertaken during an internship at the Indian 
 
 ---
 
-## 📅 Weekly Work Breakdown
+## Weekly Work Breakdown
 
-### 🗓️ Week 1 — QuNetSim Implementation
+### Week 1 — QuNetSim Implementation
 
 - `QuNetSim.py` — Python script implementing quantum network simulations using the QuNetSim framework.
 - `QuNetSim Theory.docx` — A comprehensive document detailing the theoretical aspects of quantum networking and the QuNetSim simulator.
 
-### 🗓️ Week 2 — Web Interface Development
+### Week 2 — Web Interface Development
 
 - `index.html` — The main HTML file for the web interface of the simulation project.
 - `script.ts` — TypeScript file containing the logic and interactivity for the web interface.
@@ -45,6 +45,6 @@ Contributions are welcome! If you have suggestions or improvements, feel free to
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Special thanks to the mentors and team at IISER for their guidance and support during the internship.
