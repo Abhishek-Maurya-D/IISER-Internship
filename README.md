@@ -1,50 +1,59 @@
-# IISER Internship Project
+# Quantum Network Simulation Internship Project
 
-🔗 **Live Demo:** [View Project Page](https://abhishek-maurya-d.github.io/IISER-Internship/)
+This repository contains the work completed during an internship at IISER, focusing on simulating quantum communication protocols and building a web-based interface for visualization and interaction.
 
-This repository contains the work undertaken during an internship at the Indian Institutes of Science Education and Research (IISER). The project focuses on quantum network simulations and includes both theoretical documentation and practical implementations.
+## Project Structure
 
----
+- **backend/**  
+  Python scripts for simulating quantum key distribution (QKD) protocols:
+  - `COW_netsquid.py`: Simulates the Coherent One-Way (COW) QKD protocol using NetSquid.
+  - `DPS_netsquid.py`: Simulates the Differential Phase Shift (DPS) QKD protocol using NetSquid.
+  - `QuNetSim.py`: Example quantum communication using the QuNetSim framework.
+  - `server.py`: Flask backend API to run protocol simulations and serve results to the frontend.
 
-## Weekly Work Breakdown
+- **frontend/week 1/**  
+  Web interface for interacting with the backend and visualizing results:
+  - `index.html`: Main web page.
+  - `script.ts`: TypeScript for frontend logic and user interaction.
+  - `styles.css`: Styling for the web interface.
 
-### Week 1 — QuNetSim Implementation
+- **docs/**  
+  - `QuNetSim Theory.docx`: Theoretical background and documentation.
 
-- `QuNetSim.py` — Python script implementing quantum network simulations using the QuNetSim framework.
-- `QuNetSim Theory.docx` — A comprehensive document detailing the theoretical aspects of quantum networking and the QuNetSim simulator.
+## Technologies Used
 
-### Week 2 — Web Interface Development
+- **Python** (NetSquid, Flask, QuNetSim)
+- **HTML/CSS/TypeScript** (Frontend UI)
+- **Flask-CORS** (for backend/frontend communication)
 
-- `index.html` — The main HTML file for the web interface of the simulation project.
-- `script.ts` — TypeScript file containing the logic and interactivity for the web interface.
-- `styles.css` — CSS file for styling the web interface.
+## Setup & Usage
 
----
+### Backend
 
-## 🛠️ Technologies Used
+1. Install Python dependencies:
+   ```sh
+   pip install flask flask-cors netsquid qunetsim matplotlib
+   ```
+2. Run the backend server:
+   ```sh
+   python backend/server.py
+   ```
 
-- **Python** — For backend simulations and quantum network modeling.
-- **HTML/CSS** — To structure and style the web interface.
-- **TypeScript** — For adding interactivity and handling user actions in the frontend.
+### Frontend
 
----
+Open `frontend/week 1/index.html` in your browser.  
+(For full functionality, ensure the backend server is running.)
 
-## 📚 Project Overview
+## Features
 
-The project simulates quantum networks using the [QuNetSim](https://github.com/tqsd/QuNetSim) framework. It provides both:
-- a backend for simulating quantum communication protocols, and
-- a frontend interface for user interaction and visualization.
+- Simulate COW and DPS QKD protocols.
+- Visualize quantum communication timelines.
+- Interactive web interface for protocol selection and result display.
 
-The theoretical documentation explains the foundational principles of quantum networking used in the simulations.
+## Contributing
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
-
----
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## Acknowledgments
 
-Special thanks to the mentors and team at IISER for their guidance and support during the internship.
+Thanks to IISER mentors and the open-source quantum simulation community.
